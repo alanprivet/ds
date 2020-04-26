@@ -1,0 +1,33 @@
+{
+  "name": "ds",
+  "version": "0.1.0",
+  "main": "ds.sass",
+  "author": "Alan Privet",
+  "license": "MIT",
+  "repository": "https://github.com/alanprivet/ds.git",
+  "private": true,
+  "scripts": {
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/ds.css css/ds.css",
+    "build-cleancss": "cleancss -o css/ds.min.css css/ds.css",
+    "build-clean": "rimraf css",
+    "build-sass": "node-sass --output-style expanded --source-map true ds.sass css/ds.css",
+    "deploy": "npm run build",
+    "start": "npm run build-sass -- --watch"
+  },
+  "devDependencies": {
+    "bulma": "^0.8.2",
+    "node-sass": "^4.14.0",
+    "autoprefixer": "^9.7.6",
+    "clean-css-cli": "^4.3.0",
+    "postcss-cli": "^7.1.0",
+    "rimraf": "^3.0.2"
+  },
+  "files": [
+    "css",
+    "sass",
+    "ds.sass",
+    "LICENSE",
+    "README.md"
+  ]
+}

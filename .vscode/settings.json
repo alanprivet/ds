@@ -1,0 +1,9 @@
+{
+  "compile-hero.jade-output-toggle": false,
+  "compile-hero.javascript-output-toggle": false,
+  "compile-hero.less-output-toggle": false,
+  "compile-hero.sass-output-toggle": false,
+  "compile-hero.typescript-output-toggle": false,
+  "compile-hero.typescriptx-output-toggle": false,
+  "compile-hero.pug-output-directory": "."
+}
