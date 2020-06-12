@@ -9,7 +9,7 @@
   "scripts": {
     "build": "yarn build-clean && yarn build-sass && yarn build-autoprefix && yarn build-cleancss",
     "build-autoprefix": "postcss --use autoprefixer --map false --dir css css/ds.css css/ds-utilities.css",
-    "build-cleancss": "cleancss -o css/ds.min.css css/ds.css css/ds-utilities.css",
+    "build-cleancss": "cleancss -o css/ds.min.css css/ds.css & cleancss -o css/ds-utilities.min.css css/ds-utilities.css",
     "build-clean": "rimraf css",
     "build-sass": "node-sass -q --output-style expanded --source-map true ds.sass css/ds.css & node-sass -q --output-style expanded --source-map true ds-utilities.sass css/ds-utilities.css",
     "deploy": "yarn build",
