@@ -7,21 +7,29 @@
   "repository": "https://github.com/alanprivet/ds.git",
   "private": true,
   "scripts": {
-    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
-    "build-autoprefix": "postcss --use autoprefixer --map false --output css/ds.css css/ds.css",
-    "build-cleancss": "cleancss -o css/ds.min.css css/ds.css",
+    "build": "yarn build-clean && yarn build-sass && yarn build-autoprefix && yarn build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --map false --dir css css/ds.css css/ds-utilities.css",
+    "build-cleancss": "cleancss -o css/ds.min.css css/ds.css css/ds-utilities.css",
     "build-clean": "rimraf css",
-    "build-sass": "node-sass --output-style expanded --source-map true ds.sass css/ds.css",
-    "deploy": "npm run build",
-    "start": "npm run build-sass -- --watch"
+    "build-sass": "node-sass -q --output-style expanded --source-map true ds.sass css/ds.css & node-sass -q --output-style expanded --source-map true ds-utilities.sass css/ds-utilities.css",
+    "deploy": "yarn build",
+    "start": "yarn build-sass --watch"
   },
   "devDependencies": {
-    "bulma": "^0.8.2",
-    "node-sass": "^4.14.0",
     "autoprefixer": "^9.7.6",
+    "bootstrap": "^4.4.1",
+    "bulma": "^0.8.2",
     "clean-css-cli": "^4.3.0",
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.0",
     "postcss-cli": "^7.1.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.9.0"
   },
   "files": [
     "css",

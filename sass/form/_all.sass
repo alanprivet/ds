@@ -1,0 +1,13 @@
+$input-shadow: none
+  
+@import "../../node_modules/bulma/sass/form/_all.sass"
+
+.field.has-addons
+  .control
+    &:not(:only-child):not(:first-child) *
+      border-left: none
+    &:not(:only-child):not(:last-child) *
+      border-right: none
+  
+  // &:focus-within .control :first-child
+  //   @extend .is-focused
