@@ -11,14 +11,12 @@
     "build-autoprefix": "postcss --use autoprefixer --map false --dir css css/ds.css css/ds-utilities.css",
     "build-cleancss": "cleancss -o css/ds.min.css css/ds.css & cleancss -o css/ds-utilities.min.css css/ds-utilities.css",
     "build-clean": "rimraf css",
-    "build-sass": "node-sass -q --output-style expanded --source-map true ds.sass css/ds.css & node-sass -q --output-style expanded --source-map true ds-utilities.sass css/ds-utilities.css",
+    "build-sass": "node-sass -q --output-style expanded --source-map true ds.sass css/ds.css && node-sass -q --output-style expanded --source-map true ds-utilities.sass css/ds-utilities.css",
     "deploy": "yarn build",
     "start": "yarn build-sass --watch"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
-    "bootstrap": "^4.4.1",
-    "bulma": "^0.9.0",
     "clean-css-cli": "^4.3.0",
     "css-loader": "^3.5.3",
     "html-webpack-plugin": "^4.3.0",
@@ -37,5 +35,9 @@
     "ds.sass",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "bulma": "^0.9.0"
+  }
 }

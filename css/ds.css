@@ -7697,4 +7697,8 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     padding: 18rem 1.5rem;
   }
 }
+
+.box {
+  border: 1px solid #ededed;
+}
 /*# sourceMappingURL=ds.css.map */
