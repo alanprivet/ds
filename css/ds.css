@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @-webkit-keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -6,7 +7,6 @@
     transform: rotate(359deg);
   }
 }
-
 @keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -42,7 +42,7 @@
 }
 
 .title:not(:last-child),
-.subtitle:not(:last-child) {
+.subtitle:not(:last-child), .box:not(:last-child) {
   margin-bottom: 1.5rem;
 }
 
@@ -73,18 +73,18 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   align-items: center;
-  border: 0.1rem solid transparent;
-  border-radius: 4px;
+  border: 0.09rem solid transparent;
+  border-radius: 2.8px;
   box-shadow: none;
   display: inline-flex;
   font-size: 1rem;
-  height: 2.25em;
+  height: 2.5em;
   justify-content: flex-start;
   line-height: 1.25;
-  padding-bottom: calc(0.5em - 0.1rem);
-  padding-left: calc(0.75em - 0.1rem);
-  padding-right: calc(0.75em - 0.1rem);
-  padding-top: calc(0.5em - 0.1rem);
+  padding-bottom: calc(0.5em - 0.09rem);
+  padding-left: calc(0.75em - 0.09rem);
+  padding-right: calc(0.75em - 0.09rem);
+  padding-top: calc(0.5em - 0.09rem);
   position: relative;
   vertical-align: top;
 }
@@ -1091,7 +1091,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .is-size-7 {
-  font-size: 0.75rem !important;
+  font-size: 0.875rem !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -1114,7 +1114,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 1rem !important;
   }
   .is-size-7-mobile {
-    font-size: 0.75rem !important;
+    font-size: 0.875rem !important;
   }
 }
 
@@ -1138,7 +1138,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 1rem !important;
   }
   .is-size-7-tablet {
-    font-size: 0.75rem !important;
+    font-size: 0.875rem !important;
   }
 }
 
@@ -1162,7 +1162,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 1rem !important;
   }
   .is-size-7-touch {
-    font-size: 0.75rem !important;
+    font-size: 0.875rem !important;
   }
 }
 
@@ -1186,7 +1186,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 1rem !important;
   }
   .is-size-7-desktop {
-    font-size: 0.75rem !important;
+    font-size: 0.875rem !important;
   }
 }
 
@@ -1210,7 +1210,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 1rem !important;
   }
   .is-size-7-widescreen {
-    font-size: 0.75rem !important;
+    font-size: 0.875rem !important;
   }
 }
 
@@ -1234,7 +1234,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 1rem !important;
   }
   .is-size-7-fullhd {
-    font-size: 0.75rem !important;
+    font-size: 0.875rem !important;
   }
 }
 
@@ -1951,7 +1951,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   width: 1.5rem;
 }
 
-.icon.is-small {
+.icon.is-small, .icon.button {
   height: 1rem;
   width: 1rem;
 }
@@ -2038,7 +2038,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .title.is-7 {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .subtitle {
@@ -2082,20 +2082,20 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .subtitle.is-7 {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .button {
   background-color: white;
   border-color: #dbdbdb;
-  border-width: 0.1rem;
+  border-width: 0.09rem;
   color: #363636;
   cursor: pointer;
   justify-content: center;
-  padding-bottom: calc(0.5em - 0.1rem);
+  padding-bottom: calc(0.5em - 0.09rem);
   padding-left: 1em;
   padding-right: 1em;
-  padding-top: calc(0.5em - 0.1rem);
+  padding-top: calc(0.5em - 0.09rem);
   text-align: center;
   white-space: nowrap;
 }
@@ -2104,24 +2104,24 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: inherit;
 }
 
-.button .icon, .button .icon.is-small, .button .icon.is-medium, .button .icon.is-large {
+.button .icon, .button .icon.is-small, .button .icon.button, .button .icon.is-medium, .button .icon.is-large {
   height: 1.5em;
   width: 1.5em;
 }
 
 .button .icon:first-child:not(:last-child) {
-  margin-left: calc(-0.5em - 0.1rem);
+  margin-left: calc(-0.5em - 0.09rem);
   margin-right: 0.25em;
 }
 
 .button .icon:last-child:not(:first-child) {
   margin-left: 0.25em;
-  margin-right: calc(-0.5em - 0.1rem);
+  margin-right: calc(-0.5em - 0.09rem);
 }
 
 .button .icon:first-child:last-child {
-  margin-left: calc(-0.5em - 0.1rem);
-  margin-right: calc(-0.5em - 0.1rem);
+  margin-left: calc(-0.5em - 0.09rem);
+  margin-right: calc(-0.5em - 0.09rem);
 }
 
 .button:hover, .button.is-hovered {
@@ -3329,9 +3329,9 @@ fieldset[disabled] .button.is-danger.is-inverted.is-outlined {
   color: #cc0f35;
 }
 
-.button.is-small {
+.button.is-small, .button {
   border-radius: 2px;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .button.is-normal {
@@ -3410,14 +3410,14 @@ fieldset[disabled] .button {
 
 .buttons.are-small .button:not(.is-normal):not(.is-medium):not(.is-large) {
   border-radius: 2px;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
-.buttons.are-medium .button:not(.is-small):not(.is-normal):not(.is-large) {
+.buttons.are-medium .button:not(.is-small):not(.button):not(.is-normal):not(.is-large) {
   font-size: 1.25rem;
 }
 
-.buttons.are-large .button:not(.is-small):not(.is-normal):not(.is-medium) {
+.buttons.are-large .button:not(.is-small):not(.button):not(.is-normal):not(.is-medium) {
   font-size: 1.5rem;
 }
 
@@ -3523,7 +3523,7 @@ fieldset[disabled] .button {
 .input, .textarea, .select select {
   background-color: white;
   border-color: #dbdbdb;
-  border-radius: 4px;
+  border-radius: 2.8px;
   color: #363636;
 }
 
@@ -3685,9 +3685,9 @@ fieldset[disabled] .select select:-ms-input-placeholder,
   box-shadow: 0 0 0 0 rgba(241, 70, 104, 0.25);
 }
 
-.is-small.input, .is-small.textarea {
+.button.input, .button.textarea, .is-small.input, .is-small.textarea {
   border-radius: 2px;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .is-medium.input, .is-medium.textarea {
@@ -3710,8 +3710,8 @@ fieldset[disabled] .select select:-ms-input-placeholder,
 
 .input.is-rounded {
   border-radius: 290486px;
-  padding-left: calc(calc(0.75em - 0.1rem) + 0.375em);
-  padding-right: calc(calc(0.75em - 0.1rem) + 0.375em);
+  padding-left: calc(calc(0.75em - 0.09rem) + 0.375em);
+  padding-right: calc(calc(0.75em - 0.09rem) + 0.375em);
 }
 
 .input.is-static {
@@ -3726,7 +3726,7 @@ fieldset[disabled] .select select:-ms-input-placeholder,
   display: block;
   max-width: 100%;
   min-width: 100%;
-  padding: calc(0.75em - 0.1rem);
+  padding: calc(0.75em - 0.09rem);
   resize: vertical;
 }
 
@@ -3777,7 +3777,7 @@ fieldset[disabled] .radio {
 }
 
 .select:not(.is-multiple) {
-  height: 2.25em;
+  height: 2.5em;
 }
 
 .select:not(.is-multiple):not(.is-loading)::after {
@@ -3985,9 +3985,9 @@ fieldset[disabled] .select select:hover {
   box-shadow: 0 0 0 0 rgba(241, 70, 104, 0.25);
 }
 
-.select.is-small {
+.select.is-small, .select.button {
   border-radius: 2px;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .select.is-medium {
@@ -4018,8 +4018,8 @@ fieldset[disabled] .select select:hover {
   transform: none;
 }
 
-.select.is-loading.is-small:after {
-  font-size: 0.75rem;
+.select.is-loading.is-small:after, .select.is-loading.button:after {
+  font-size: 0.875rem;
 }
 
 .select.is-loading.is-medium:after {
@@ -4277,8 +4277,8 @@ fieldset[disabled] .select select:hover {
   color: #fff;
 }
 
-.file.is-small {
-  font-size: 0.75rem;
+.file.is-small, .file.button {
+  font-size: 0.875rem;
 }
 
 .file.is-medium {
@@ -4308,7 +4308,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .file.has-name.is-empty .file-cta {
-  border-radius: 4px;
+  border-radius: 2.8px;
 }
 
 .file.has-name.is-empty .file-name {
@@ -4338,7 +4338,7 @@ fieldset[disabled] .select select:hover {
   font-size: 21px;
 }
 
-.file.is-boxed.is-small .file-icon .fa {
+.file.is-boxed.is-small .file-icon .fa, .file.is-boxed.button .file-icon .fa {
   font-size: 14px;
 }
 
@@ -4351,11 +4351,11 @@ fieldset[disabled] .select select:hover {
 }
 
 .file.is-boxed.has-name .file-cta {
-  border-radius: 4px 4px 0 0;
+  border-radius: 2.8px 2.8px 0 0;
 }
 
 .file.is-boxed.has-name .file-name {
-  border-radius: 0 0 4px 4px;
+  border-radius: 0 0 2.8px 2.8px;
   border-width: 0 1px 1px;
 }
 
@@ -4377,11 +4377,11 @@ fieldset[disabled] .select select:hover {
 }
 
 .file.is-right .file-cta {
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 2.8px 2.8px 0;
 }
 
 .file.is-right .file-name {
-  border-radius: 4px 0 0 4px;
+  border-radius: 2.8px 0 0 2.8px;
   border-width: 1px 0 1px 1px;
   order: -1;
 }
@@ -4426,7 +4426,7 @@ fieldset[disabled] .select select:hover {
 .file-cta,
 .file-name {
   border-color: #dbdbdb;
-  border-radius: 4px;
+  border-radius: 2.8px;
   font-size: 1em;
   padding-left: 1em;
   padding-right: 1em;
@@ -4473,8 +4473,8 @@ fieldset[disabled] .select select:hover {
   margin-bottom: 0.5em;
 }
 
-.label.is-small {
-  font-size: 0.75rem;
+.label.is-small, .label.button {
+  font-size: 0.875rem;
 }
 
 .label.is-medium {
@@ -4487,7 +4487,7 @@ fieldset[disabled] .select select:hover {
 
 .help {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   margin-top: 0.25rem;
 }
 
@@ -4681,8 +4681,8 @@ fieldset[disabled] .select select:hover {
     margin-right: 1.5rem;
     text-align: right;
   }
-  .field-label.is-small {
-    font-size: 0.75rem;
+  .field-label.is-small, .field-label.button {
+    font-size: 0.875rem;
     padding-top: 0.375em;
   }
   .field-label.is-normal {
@@ -4737,10 +4737,12 @@ fieldset[disabled] .select select:hover {
   color: #4a4a4a;
 }
 
-.control.has-icons-left .input.is-small ~ .icon,
-.control.has-icons-left .select.is-small ~ .icon, .control.has-icons-right .input.is-small ~ .icon,
-.control.has-icons-right .select.is-small ~ .icon {
-  font-size: 0.75rem;
+.control.has-icons-left .input.is-small ~ .icon, .control.has-icons-left .input.button ~ .icon,
+.control.has-icons-left .select.is-small ~ .icon,
+.control.has-icons-left .select.button ~ .icon, .control.has-icons-right .input.is-small ~ .icon, .control.has-icons-right .input.button ~ .icon,
+.control.has-icons-right .select.is-small ~ .icon,
+.control.has-icons-right .select.button ~ .icon {
+  font-size: 0.875rem;
 }
 
 .control.has-icons-left .input.is-medium ~ .icon,
@@ -4757,17 +4759,17 @@ fieldset[disabled] .select select:hover {
 
 .control.has-icons-left .icon, .control.has-icons-right .icon {
   color: #dbdbdb;
-  height: 2.25em;
+  height: 2.5em;
   pointer-events: none;
   position: absolute;
   top: 0;
-  width: 2.25em;
+  width: 2.5em;
   z-index: 4;
 }
 
 .control.has-icons-left .input,
 .control.has-icons-left .select select {
-  padding-left: 2.25em;
+  padding-left: 2.5em;
 }
 
 .control.has-icons-left .icon.is-left {
@@ -4776,7 +4778,7 @@ fieldset[disabled] .select select:hover {
 
 .control.has-icons-right .input,
 .control.has-icons-right .select select {
-  padding-right: 2.25em;
+  padding-right: 2.5em;
 }
 
 .control.has-icons-right .icon.is-right {
@@ -4790,8 +4792,8 @@ fieldset[disabled] .select select:hover {
   z-index: 4;
 }
 
-.control.is-loading.is-small:after {
-  font-size: 0.75rem;
+.control.is-loading.is-small:after, .control.is-loading.button:after {
+  font-size: 0.875rem;
 }
 
 .control.is-loading.is-medium:after {
@@ -4808,6 +4810,10 @@ fieldset[disabled] .select select:hover {
 
 .field.has-addons .control:not(:only-child):not(:last-child) * {
   border-right: none;
+}
+
+.input:focus {
+  border-width: 0.125rem;
 }
 
 .navbar {
@@ -5722,7 +5728,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   }
   .navbar.is-spaced a.navbar-item,
   .navbar.is-spaced .navbar-link {
-    border-radius: 4px;
+    border-radius: 2.8px;
   }
   .navbar.is-transparent a.navbar-item:focus, .navbar.is-transparent a.navbar-item:hover, .navbar.is-transparent a.navbar-item.is-active,
   .navbar.is-transparent .navbar-link:focus,
@@ -7686,7 +7692,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 .section {
-  padding: 3rem 1.5rem;
+  padding: 3rem 2rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -7696,6 +7702,23 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   .section.is-large {
     padding: 18rem 1.5rem;
   }
+}
+
+.box {
+  background-color: white;
+  border-radius: 2.8px;
+  box-shadow: none;
+  color: #4a4a4a;
+  display: block;
+  padding: 1.25rem;
+}
+
+a.box:hover, a.box:focus {
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px #3273dc;
+}
+
+a.box:active {
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2), 0 0 0 1px #3273dc;
 }
 
 .box {
