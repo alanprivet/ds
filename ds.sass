@@ -1,11 +1,21 @@
-@import "sass/base/_all"
-@import "sass/elements/_all"
-@import "sass/form/_all"
-@import "sass/components/_all"
-@import "sass/grid/_all"
-@import "sass/layout/_all"
-@import "sass/utilities/_all"
-@import "node_modules/bulma/sass/elements/box"
+@import "tailwindcss/base"
+@import "tailwindcss/utilities"
 
-.box
-  border: 1px solid $border-light
+@import "sass/base/_all"
+
+@import "sass/elements/_all"
+@import "~bulma/sass/elements/title"
+@import "~bulma/sass/elements/image"
+@import "~bulma/sass/elements/icon"
+@import "~bulma/sass/elements/box"
+
+@import "sass/form/_all"
+
+@import ~bulma/sass/grid/columns
+
+@import ~bulma/sass/layout/section
+
+@import "~bulma/sass/components/navbar"
+@import "~bulma/sass/components/menu"
+@import "~bulma/sass/components/card"
+@import "~bulma/sass/components/dropdown"
