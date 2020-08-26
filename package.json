@@ -1,11 +1,11 @@
 {
-  "name": "ds",
+  "name": "@fourix/ds",
   "version": "0.1.0",
   "main": "ds.sass",
   "author": "Alan Privet",
   "license": "MIT",
   "repository": "https://github.com/alanprivet/ds.git",
-  "private": true,
+  "private": false,
   "scripts": {
     "build": "webpack --env.prod",
     "deploy": "yarn build",
