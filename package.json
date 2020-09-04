@@ -1,6 +1,6 @@
 {
   "name": "@fourix/ds",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "ds.sass",
   "author": "Alan Privet",
   "license": "MIT",
@@ -23,6 +23,7 @@
     "postcss-cli": "^7.1.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.2",
+    "standard-version": "^9.0.0",
     "terser-webpack-plugin": "^4.1.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
