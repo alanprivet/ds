@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
+    "buefy": "^0.9.3",
     "css-loader": "^3.5.3",
     "cssnano": "^4.1.10",
     "html-webpack-plugin": "^4.3.0",
