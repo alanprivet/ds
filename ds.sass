@@ -1,22 +1,66 @@
- 
-@import "sass/base/all"
+@charset "utf-8"
 
-@import "sass/elements/all"
+@import "~tailwindcss/base"
+@import "~tailwindcss/utilities"
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap')
+
+$family-primary: 'Inter', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+
+$weight-semibold: 500
+
+$radius: 2.8px
+
+$control-height: 2.5em
+$control-line-height: 1.25
+$control-border-width: 0.125rem
+
+// $input-focus-border-size: 0.125rem
+// $input-focus-box-shadow-size: 0 0 0 0
+
+$button-padding-horizontal: 0.756em
+// $button-focus-box-shadow-size: 0 0 0 0
+
+// $box-shadow: none
+$box-radius: $radius
+
+// $section-padding: 3rem 1.5rem
+
+@import "~bulma/sass/utilities/_all"
+@import "~bulma/sass/base/_all"
+
+$button-text-decoration: none
+@import "~bulma/sass/elements/button"
+.button
+  height: 2.25em !important
+  @apply font-medium
+
+  &.is-rounded
+    @apply h-10
+    padding-left: $button-padding-horizontal
+    padding-right: $button-padding-horizontal
+
 @import "~bulma/sass/elements/container"
 @import "~bulma/sass/elements/image"
 @import "~bulma/sass/elements/icon"
-@import "~bulma/sass/elements/box"
-@import "~bulma/sass/elements/tag"
 
-$title-weight: $weight-medium
+@import "~bulma/sass/elements/box"
+.box
+  border: 1px solid $border-light
+
+@import "~bulma/sass/elements/tag"
 @import "~bulma/sass/elements/title"
 
 $label-weight: $weight-medium
-@import "sass/form/all"
+$input-shadow: none
+@import "~bulma/sass/form/all"
 
-@import ~bulma/sass/grid/columns
-
-@import ~bulma/sass/layout/section
+.field.has-addons
+  .control
+    &:not(:only-child):not(:first-child) *
+      border-left: none
+    &:not(:only-child):not(:last-child) *
+      border-right: none
 
 @import "~bulma/sass/components/navbar"
 
@@ -31,9 +75,18 @@ $menu-item-active-background-color: #fafafa
       @apply font-medium
 
 @import "~bulma/sass/components/card"
+
+$modal-card-title-size: $size-5
+$modal-card-head-background-color: $white
+$modal-card-head-border-bottom: none
+$modal-card-foot-border-top: none
+@import "~bulma/sass/components/modal"
+
 @import "~bulma/sass/components/dropdown"
+@import "~buefy/src/scss/components/modal"
+@import "~buefy/src/scss/components/dialog"
 @import "~buefy/src/scss/components/taginput"
 
-@import "~tailwindcss/base"
-@import "~tailwindcss/utilities"
+@import ~bulma/sass/grid/columns
 
+@import ~bulma/sass/layout/section
